@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Desserts-Shop</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+    <div id="block"></div>
+    <div id="PedidoConcluido">
+        <h1>Order Confirmed</h1>
+        <c id="cartprecO">We hope you enjoy our food!</c>
+        <div id="redDone">
+        <div id="cartItemssFinal">
+            <!-- Items added to the cart will be appended here -->
+          </div>
+          <p id="t">Order Total <c id="NN">1</c></p>
+        </div>
+        <div id="StartNew" onclick="voltar()">Start New Order</div>
+
+    </div>
+<div id="main">
+  <h1>Desserts</h1>
+  <section id="carrinho">
+    <h1 id="seuC">Your Cart</h1>
+    <img src="assets/images/illustration-empty-cart.svg" id="box">
+    <c id="liSPAN">Your added items will appear here</c>
+    <div id="cartItems">
+      <!-- Items added to the cart will be appended here -->
+    </div>
+    <div id="carbon"> <img src="assets/images/icon-carbon-neutral.svg" alt="" id="carb">This is a <b>carbon-neutral</b> delivery</div>
+    <div id="OT">
+        <p id="t">Order Total <c id="N">1</c></p>
+    </div>
+    <div id="confirmar" onclick="confirmou()">Confirm Order</div>
+  </section>
+  <div id="painel">
+    <div id="food">
+        <div id="addCart" class="addWaffle">
+            <span id="btnWaffle" class="addWaffleS" onclick="addWaffle()" onmouseenter="WaffleMouseE()" onmouseleave="WaffleMouseL()">Add to Cart</span>
+        </div>
+        <img src="assets/images/image-waffle-desktop.jpg" alt="" id="imgWaffle">
+        <p id="informac">Waffle<br>
+            <c>Waffle with Berries <br></c> 
+            <c id="preco">$6.50</c>
+        </p>
+    </div>
+    
+    <div id="food">
+        <div id="addCart" class="addCreme">
+            <span id="btnCreme" class="addCremeS" onclick="addCreme()" onmouseenter="CremeMouseE()" onmouseleave="CremeMouseL()">Add to Cart</span>
+        </div>
+        <img src="assets/images/image-creme-brulee-desktop.jpg" alt="" id="imgCreme">
+        <p id="informac">Crème Brûlée<br>
+            <c>Vanilla Bean Crème Brûlée <br></c>
+            <c id="preco">$7.00</c>
+        </p>
+    </div>
+    
+    <div id="food">
+        <div id="addCart" class="addMacaron">
+            <span id="btnMacaron" class="addMacaronS" onclick="addMacaron()" onmouseenter="MacaronMouseE()" onmouseleave="MacaronMouseL()">Add to Cart</span>
+        </div>
+        <img src="assets/images/image-macaron-desktop.jpg" alt="" id="imgMacaron">
+        <p id="informac">Macaron<br>
+            <c>Macaron Mix of Five<br></c>
+            <c id="preco">$8.00</c>
+        </p>
+    </div>
+    
+    <div id="food">
+        <div id="addCart" class="addTiramisu">
+            <span id="btnTiramisu" class="addTiramisuS" onclick="addTiramisu()" onmouseenter="TiramisuMouseE()" onmouseleave="TiramisuMouseL()">Add to Cart</span>
+        </div>
+        <img src="assets/images/image-tiramisu-desktop.jpg" alt="" id="imgTiramisu">
+        <p id="informac">Tiramisu<br>
+            <c>Classic Tiramisu<br></c>
+            <c id="preco">$5.50</c>
+        </p>
+    </div>
+    
+    <div id="food">
+        <div id="addCart" class="addBaklava">
+            <span id="btnBaklava" class="addBaklavaS" onclick="addBaklava()" onmouseenter="BaklavaMouseE()" onmouseleave="BaklavaMouseL()">Add to Cart</span>
+        </div>
+        <img src="assets/images/image-baklava-desktop.jpg" alt="" id="imgBaklava">
+        <p id="informac">Baklava<br>
+            <c>Pistachio Baklava<br></c>
+            <c id="preco">$4.00</c>
+        </p>
+    </div>
+    
+    <div id="food">
+        <div id="addCart" class="addPie">
+            <span id="btnPie" class="addPieS" onclick="addPie()" onmouseenter="PieMouseE()" onmouseleave="PieMouseL()">Add to Cart</span>
+        </div>
+        <img src="assets/images/image-meringue-desktop.jpg" alt="" id="imgPie">
+        <p id="informac">Pie<br>
+            <c>Lemon Meringue Pie<br></c>
+            <c id="preco">$5.00</c>
+        </p>
+    </div>
+    
+    <div id="food">
+        <div id="addCart" class="addCake">
+            <span id="btnCake" class="addCakeS" onclick="addCake()" onmouseenter="CakeMouseE()" onmouseleave="CakeMouseL()">Add to Cart</span>
+        </div>
+        <img src="assets/images/image-cake-desktop.jpg" alt="" id="imgCake">
+        <p id="informac">Cake<br>
+            <c>Red Velvet Cake<br></c>
+            <c id="preco">$4.50</c>
+        </p>
+    </div>
+    
+    <div id="food">
+        <div id="addCart" class="addBrownie">
+            <span id="btnBrownie" class="addBrownieS" onclick="addBrownie()" onmouseenter="BrownieMouseE()" onmouseleave="BrownieMouseL()">Add to Cart</span>
+        </div>
+        <img src="assets/images/image-brownie-desktop.jpg" alt="" id="imgBrownie">
+        <p id="informac">Brownie<br>
+            <c>Salted Caramel Brownie<br></c>
+            <c id="preco">$4.50</c>
+        </p>
+    </div>
+    
+    <div id="food">
+        <div id="addCart" class="addPanna">
+            <span id="btnPanna" class="addPannaS" onclick="addPanna()" onmouseenter="PannaMouseE()" onmouseleave="PannaMouseL()">Add to Cart</span>
+        </div>
+        <img src="assets/images/image-panna-cotta-desktop.jpg" alt="" id="imgPanna">
+        <p id="informac">Panna Cotta<br>
+            <c>Vanilla Panna Cotta<br></c>
+            <c id="preco">$6.50</c>
+        </p>
+    </div>
+</div>
+</div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="#">Pedro Eustáquio Martins Assad Magalhães</a>.
+  </div>
+  <script src="script.js">
+  </script>
+</body>
+</html>

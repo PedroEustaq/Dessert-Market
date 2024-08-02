@@ -1,0 +1,243 @@
+body {
+    background-color: aliceblue;
+    font-family: SBold;
+    margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+div#main {
+    background-color: #fcf8f5;
+    margin: auto auto auto auto;
+    display: block;
+    padding: 30px 30px 30px 60px;
+    height: 1300px;
+    width: 1200px;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+    border-radius: 10px;
+}
+div#food {
+    width: 250px;
+    height: 350px;
+    display: block;
+    float: left;
+    padding-right: 15px;
+}
+img {
+    width: 100%;
+    border-radius: 10px;
+}
+img#box {
+    width: 150px;
+    display: block;
+    margin: auto auto auto auto;
+    height: 150px;
+}
+c#liSPAN {
+    text-align: center;
+    color: rgba(0,0,0,0.5);
+    margin: auto auto auto auto;
+    display: block;
+    font-size: 13px;
+}
+img#meno {
+    width: 70px;
+    float: left;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+div#addCart {
+    position: absolute;
+    background-color: aliceblue;
+    padding: 15px 10px 5px 10px;
+    margin-top: 210px;
+    margin-left: 35px;
+    width: 160px;
+    height: 30px;
+    display: block;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+p#informac {
+color: gray;
+}
+img#carb {
+    position: absolute;
+    width: 20px;
+    margin-left: -20px;
+}
+div#carbon {
+    width: 300px;
+    height: 40px;
+    display: none;
+    margin: auto auto auto auto;
+    padding-top: 15px;
+    text-align: center;
+    background-color: rgba(190, 84, 84, 0.362);
+    border-radius: 10px;
+}
+p#realTipo {
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    padding-bottom: 15px;
+}
+div#OT {
+    display: none;
+}
+div#redDone{
+    background-color: #fcf8f5;
+    margin: auto auto auto auto;
+    width: 400px;
+    border-radius: 10px;
+    padding: 5px 5px 5px 5px;
+}
+div#block {
+    position: absolute;
+    background-color: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 230%;
+    z-index: 1;
+    display: none;
+    
+}
+c#cartprecO {
+    display: block;
+    width: 400px;
+    margin-bottom: 50px;
+    margin-left: 0px ;
+    color: rgba(0,0,0,0.7);;
+}
+div#StartNew {
+    background-color: #cc461d;
+    text-align: center;
+    padding: 10px 0px 0px 0px;
+    width: 350px;
+    height: 30px;
+    border-radius: 20px;
+    display: block;
+    margin: auto auto auto auto ;
+    color: white;
+    margin-top: 20px;
+    font-size: 13px;
+}
+div#PedidoConcluido {
+    padding: 60px 10px 20px 30px;
+    position: absolute;
+    background-color: white;
+    border-radius: 20px;
+    width: 500px;
+    display: none;
+    margin-left: 500px;
+    margin-top:200px ;
+    z-index: 1;
+}
+c {
+    color:black
+}
+c#preco {
+    color: #c83b0e;
+}
+section#carrinho {
+    padding: 10px 10px 10px 10px;
+    width: 350px;
+    background-color: white;
+    float: right;
+    padding-bottom: 10px;
+    border-radius: 20px;
+    margin-right: 25px;
+    margin-top: -60px;
+}
+div#confirmar {
+    display: none;
+    color: white;
+    background-color: #952c0c;
+    border-radius: 30px;
+    text-align: center;
+    padding: 20px 15px 20px 15px;
+}
+@font-face {
+    font-family: 'Medio'; /* Nome que você vai usar para referenciar a fonte */
+    src: url('assets/fonts/static/RedHatText-Regular.ttf') format('truetype'); /* Caminho para o arquivo da fonte e formato */
+}
+h1#seuC {
+    color: #c83b0e;
+    font-family: Grande;
+}
+img#mais {
+    position: absolute;
+    width: 30px;
+    margin-left: 30px;
+    margin-top: -5px;
+    filter: invert(1);
+}
+img#menos {
+    position: absolute;
+    width: 30px;
+    margin-left: -60px;
+    margin-top: -5px;
+    filter: invert(1);
+}
+@font-face {
+    font-family: 'SBold'; /* Nome que você vai usar para referenciar a fonte */
+    src: url('assets/fonts/static/RedHatText-SemiBold.ttf') format('truetype'); /* Caminho para o arquivo da fonte e formato */
+}
+div.addWaffle {
+    font-family: SBold;
+}
+c#qtn {
+    color: orangered;
+}
+c#cartpreco {
+    color: rgba(0,0,0,0.5);
+}
+c#precofinal {
+    color: rgba(0,0,0,0.7);
+}
+p#t {
+    color: rgba(0,0,0,0.8); 
+}
+c#N {
+    float: right;
+    font-size: 25px;
+}
+c#NN {
+    float: right;
+    font-size: 25px;
+}
+span {
+    background-color: white;
+    position: absolute;
+    padding: 15px 10px 5px 10px;
+    margin-top: -15px;
+    margin-left: -10px;
+    width: 160px;
+    height: 30px;
+    display: block;
+    border-radius: 20px;
+    text-align: center;
+    font-family: SBold;
+}
+span.addCremeS {
+    background-color: white;
+    position: absolute;
+    padding: 15px 10px 5px 10px;
+    margin-top: -15px;
+    margin-left: -10px;
+    width: 160px;
+    height: 30px;
+    display: block;
+    border-radius: 20px;
+    text-align: center;
+    font-family: SBold;
+}
+@font-face {
+    font-family: 'Grande'; /* Nome que você vai usar para referenciar a fonte */
+    src: url('assets/fonts/static/RedHatText-Bold.ttf') format('truetype'); /* Caminho para o arquivo da fonte e formato */
+}
+h1 {
+    font-family: Grande;
+}
+div#painel {
+    width: 800px;
+    height: 1050px;
+}
